@@ -5,3 +5,17 @@ resource "azurerm_resource_group" "aks_rg" {
 }
 
 
+
+#resource "azurerm_resource_group" "terraform-storage-rg" {
+#  name     = "terraform-storage-rg"
+#  location = var.location
+
+# Add Tags
+#  tags = {
+#   "environment" = "k8sdev"
+#    "demotag"     = "refreshtest"
+#  }
+
+#}
+
+

@@ -7,7 +7,7 @@
 variable "location" {
   type = string
   description = "Azure Region where all these resources will be provisioned"
-  default = "Central US"
+  default = "East Us"
 }
 
 # Azure Resource Group Name
@@ -29,7 +29,7 @@ variable "environment" {
 
 # SSH Public Key for Linux VMs
 variable "ssh_public_key" {
-  default = "~/.ssh/aks-prod-sshkeys-terraform/aksprodsshkey.pub"
+  default = "C:/users/rakib/.ssh/aks-prod-sshkeys-terraform/aksdevsshkey.pub"
   description = "This variable defines the SSH Public Key for Linux k8s Worker nodes"  
 }
 
@@ -43,7 +43,7 @@ variable "windows_admin_username" {
 # Windows Admin Password for k8s worker nodes
 variable "windows_admin_password" {
   type = string
-  default = "P@ssw0rd1234"
+  default = "$Password23224676@"
   description = "This variable defines the Windows admin password k8s Worker nodes"  
 }
 
